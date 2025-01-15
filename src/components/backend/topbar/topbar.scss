@@ -1,0 +1,32 @@
+.topbar {
+    height: 10vh;
+    width: 78vw;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #A9C0E7;
+
+    .user-info {
+        margin: auto 20px auto auto;
+        width: min-content;
+        height: 100%;
+        padding: 0px;
+
+        p {
+            position: relative;
+            font-family: "Inter";
+            color: white;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            vertical-align: middle;
+            padding-top: calc(calc(10vh/2) - 14.5px);
+            padding-bottom: calc(calc(10vh/2) - 14.5px);
+            font-size: 24px;
+        }
+    }
+}
+
+.faketopbar {
+    height: 10vh;
+    width: 100%;
+}

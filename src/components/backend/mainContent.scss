@@ -1,0 +1,22 @@
+#root {
+    display: flex;
+    height: fit-content;
+
+    .wack {
+        width: 78vw;
+        min-height: 100vh;
+        position: relative;
+        right: 0px;
+        height: fit-content;
+        
+        .main-content {
+            background-color: #C0D9F5;
+            width: 100%;
+            min-height: 90vh;
+            height: fit-content;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+body { height: fit-content; }

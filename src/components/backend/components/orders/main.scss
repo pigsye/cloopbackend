@@ -1,0 +1,331 @@
+.orders {
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+    
+            h2 {
+                margin-top: 0;
+            }
+    
+            input,
+            textarea {
+                width: 90%;
+                margin-bottom: 15px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                resize: none;
+            }
+    
+            .popup-buttons {
+                display: flex;
+                justify-content: space-between;
+    
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                }
+    
+                button:first-of-type {
+                    background-color: #4caf50;
+                    color: white;
+    
+                    &:hover {
+                        background-color: #45a049;
+                    }
+                }
+    
+                button:last-of-type {
+                    background-color: #f44336;
+                    color: white;
+    
+                    &:hover {
+                        background-color: #d32f2f;
+                    }
+                }
+            }
+        }
+    }
+
+    .actionbar {
+        display: flex;
+        width: 100%;
+
+        p {
+            font-family: "Inter";
+        }
+
+        .orders {
+            margin: 15px 0px 15px 15px;
+            padding: 10px;
+            color: #3866B4;
+            font-size: 1.25rem;
+        }
+    }
+
+    .orderss {
+        .user {
+            margin: 10px 25px 10px 25px;
+            padding: 10px;
+            background-color: #E3F4FF;
+            border-radius: 12px;
+            width: calc(100% - 70px);
+            min-height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .quoteinfo {
+                margin-left: 15px;
+
+                h1 {
+                    font-family: "Inter";
+                    margin: 0;
+                    font-weight: normal;
+                    font-size: 1.75rem;
+                }
+                
+                p {
+                    font-family: "Inter";
+                    margin: 5px 0 0 0;
+                    font-size: 1rem;
+                }
+            }
+
+            .action {
+                font-family: "Inter";
+                margin-right: 15px;
+                font-size: 1.25rem;
+                color: #3866B4;
+                cursor: pointer;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #274f90;
+                }
+            }
+        }
+    }
+
+    .create-order-button {
+        background-color: #3866B4;
+        padding: 15px;
+        color: white;
+        font-size: 1rem;
+        margin-left: 25px;
+        border-radius: 12px;
+        border: 0px;
+
+        &:hover {
+            background-color: #274f90;
+            transition: 1s;
+        }
+    }
+}
+
+.order-listing {
+    .actionbar {
+        display: flex;
+        width: 100%;
+
+        p {
+            font-family: "Inter";
+        }
+
+        .orders {
+            margin: 15px 0px 15px 15px;
+            padding: 10px;
+            color: #3866B4;
+            font-size: 1.25rem;
+        }
+    }
+
+    .orderss {
+        margin: 15px;
+        background-color: white;
+        border-radius: 12px;
+        min-height: 70vh;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+
+        .order-name {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #274f90;
+        }
+
+        .order-username {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .products-bought {
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .products {
+            background-color: #E3F4FF;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            button {
+                background-color: #274f90;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                padding: 5px 10px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: #3866B4;
+                    transform: scale(1.05);
+                }
+
+                &:active {
+                    background-color: #3866B4;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .shipping-address {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            white-space: pre-line;
+        }
+
+        .shipping {
+            .adsdeess {
+                margin: 10px 0;
+                font-size: 1rem;
+                white-space: pre-line;
+                color: #333;
+            }
+        }
+
+        .delete-order-button {
+            width: fit-content;
+            height: fit-content;
+            padding: 15px;
+            background-color: #E3F4FF;
+            border: 0px;
+            margin: auto auto 0px 0px;
+            border-radius: 12px;
+            font-size: 1rem;
+        }
+    }
+
+
+    /* Popup styles */
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 90%;
+        max-width: 400px;
+
+        .popup-content {
+            text-align: center;
+
+            h2 {
+                font-size: 1.5rem;
+                color: #274f90;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                width: 80%;
+                margin-bottom: 15px;
+                resize: none;
+                height: 50px;
+            } 
+
+            .popup-buttons {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+
+                button {
+                    flex: 1;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: none;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:first-of-type {
+                        background-color: #3866B4;
+                        color: white;
+
+                        &:hover {
+                            background-color: #274f90;
+                        }
+                    }
+
+                    &:last-of-type {
+                        background-color:#E3F4FF;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Overlay for the popup */
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+}
+

@@ -1,0 +1,227 @@
+.feedback {
+    .actionbar {
+        display: flex;
+        width: 100%;
+
+        p {
+            font-family: "Inter";
+        }
+
+        .feedbacks {
+            margin: 15px 0px 15px 15px;
+            padding: 10px;
+            color: #3866B4;
+        }
+
+        .create-feedback {
+            padding: 15px;
+            margin: auto 30px auto auto;
+            background-color: #3866B4;
+            color: white;
+            border: 0px;
+            border-radius: 12px;
+            font-size: 1rem;
+        }
+    }
+
+    .feedbackss {
+        .feedbacksss{
+            margin: 10px 25px 10px 25px;
+            padding: 10px;
+            background-color: #E3F4FF;
+            border-radius: 12px;
+            width: calc(100% - 70px);
+            height: 100px;
+            display: flex;
+            
+            h1 {
+                font-family: "Inter";
+                margin: auto 0px auto 10px;
+                font-weight: normal;
+                font-size: 2rem;
+            }
+
+            p {
+                font-family: "Inter";
+                margin: auto 12.5px auto auto;
+                font-size: 1.25rem;
+            }
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+            z-index: 1000;
+
+            .popup-content {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h2 {
+                    margin: 0;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1rem;
+
+                    input,
+                    textarea {
+                        margin-top: 5px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 1rem;
+                    }
+
+                    textarea {
+                        resize: none;
+                        height: 100px;
+                    }
+                }
+
+                .popup-buttons {
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        padding: 10px 20px;
+                        font-size: 1rem;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &:first-of-type {
+                            background: #007bff;
+                            color: white;
+                        }
+
+                        &:last-of-type {
+                            background: #f0f0f0;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feetback {
+        background-color: white;
+        border-radius: 12px;
+        padding: 25px;
+        margin: 25px;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin-top: 0px;
+        }
+    
+        p {
+            white-space: pre-line;
+            flex: 1;
+        }
+
+        .buttons-3 {
+            display: flex;
+    
+            button {
+                border-radius: 12px;
+                border: 0px;
+                padding: 15px;
+                font-size: 1em;
+                background-color: #E3F4FF;
+                margin-top: auto; 
+                margin-right: 10px;
+                align-self: flex-start;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 400px;
+        padding: 20px;
+        z-index: 1000;
+    
+        .popup-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+    
+            h2 {
+                margin: 0;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            label {
+                display: flex;
+                flex-direction: column;
+                font-size: 1rem;
+            }
+    
+            input,
+            textarea {
+                margin-top: 5px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+                resize: none;
+            }
+
+            textarea {
+                resize: none;
+                height: 100px;
+            }
+
+
+            .popup-buttons {
+                display: flex;
+                justify-content: space-between;
+    
+                button {
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+    
+                    &:first-of-type {
+                        background: #007bff;
+                        color: white;
+                    }
+    
+                    &:last-of-type {
+                        background: #f0f0f0;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
