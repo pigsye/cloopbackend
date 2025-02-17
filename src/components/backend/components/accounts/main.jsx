@@ -19,7 +19,7 @@ export default function Accounts() {
                 // Prepend the base URL to profile picture URLs
                 const updatedAccounts = response.data.map((account) => ({
                     ...account,
-                    pfp: prependBaseURL(account.pfp || "default_pfp.jpg"),
+                    pfp: `${BASE_URL}/uploads/${account.pfp}`,
                 }));
 
                 setAccounts(updatedAccounts);
@@ -49,7 +49,6 @@ export default function Accounts() {
                             <img
                                 src={information.pfp}
                                 alt="Profile"
-                                onError={(e) => (e.target.src = "default_pfp.jpg")}
                             />
                             <h1 className="name">{information.username}</h1>
                             <p className="action">

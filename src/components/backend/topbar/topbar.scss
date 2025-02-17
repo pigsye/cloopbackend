@@ -1,27 +1,43 @@
 .topbar {
     height: 10vh;
-    width: 78vw;
+    width: 100%;
+    z-index: -1;
     position: fixed;
     right: 0px;
     top: 0px;
     background-color: #A9C0E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 
     .user-info {
-        margin: auto 20px auto auto;
-        width: min-content;
-        height: 100%;
-        padding: 0px;
-
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        
         p {
-            position: relative;
             font-family: "Inter";
             color: white;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            vertical-align: middle;
-            padding-top: calc(calc(10vh/2) - 14.5px);
-            padding-bottom: calc(calc(10vh/2) - 14.5px);
             font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .logout-btn {
+        background-color: #E3F4FF;
+        color: #3866B4;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: "Inter";
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #C0D9F5;
         }
     }
 }
